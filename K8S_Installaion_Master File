@@ -51,5 +51,6 @@ sudo kubeadm init
   sudo chown $(id -u):$(id -g) $HOME/.kube/config
 
 # for worker nodes only to join cluster
-# kubeadm join 172.31.20.22:6443 --token bthb4a.kuinl0lc7286kyid \
-        --discovery-token-ca-cert-hash sha256:919a61accb77cb0c41c2e528f6fe25715c09e024fc85294420323cb5dcd96feb
+# kubeadm join 172.31.16.37:6443 --token ezyn7z.11wzzn6kv4d9yrq1 \
+        --discovery-token-ca-cert-hash sha256:f4ef177f9ff3ca8eab3c294475544ab0575f083a2f73c6c9d038daea3fc4bcaa
+

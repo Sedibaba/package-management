@@ -1,4 +1,4 @@
-Imoni [2022-04-29 9:59 AM]
+#Imoni [2022-04-29 9:59 AM]
 sudo hostnamectl set-hostname master 
  
 sudo su - root 

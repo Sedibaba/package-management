@@ -48,4 +48,3 @@ sudo kubeadm init
 # worker nodes to join cluster
 # kubeadm join 172.31.21.99:6443 --token fiveob.9mj2ogwjth62figw \
         --discovery-token-ca-cert-hash sha256:dcfb5025c90981f8648a8b2c5b20e6f8af7277fd1a2cdf7c3a49a2e83e045393
-

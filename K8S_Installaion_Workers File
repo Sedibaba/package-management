@@ -1,7 +1,7 @@
 #!/bin/bash
 # Common stages for both master and worker nodes
 # This can be use as user data in launch template or launch configutions
-sudo hostname node1
+sudo hostname node 2
 sudo swapoff -a
 sudo sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab
 
@@ -44,6 +44,7 @@ sudo systemctl daemon-reload
 sudo systemctl start kubelet
 sudo systemctl enable kubelet.service
 # common for master and worker nodes commands ends
-# sudo kubeadm init 
-# worker nodes to join cluster
-sudo kubeadm join 172.31.20.22:6443 --token bthb4a.kuinl0lc7286kyid \ --discovery-token-ca-cert-hash sha256:919a61accb77cb0c41c2e528f6fe25715c09e024fc85294420323cb5dcd96feb
+#sudo kubeadm init
+# for worker nodes only to join cluster
+ kubeadm join 172.31.20.22:6443 --token bthb4a.kuinl0lc7286kyid \
+        --discovery-token-ca-cert-hash sha256:919a61accb77cb0c41c2e528f6fe25715c09e024fc85294420323cb5dcd96feb

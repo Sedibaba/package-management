@@ -46,5 +46,5 @@ sudo systemctl enable kubelet.service
 # common for master and worker nodes commands ends
 sudo kubeadm init 
 # worker nodes to join cluster
-# kubeadm join 172.31.21.99:6443 --token fiveob.9mj2ogwjth62figw \
-        --discovery-token-ca-cert-hash sha256:dcfb5025c90981f8648a8b2c5b20e6f8af7277fd1a2cdf7c3a49a2e83e045393
+# kubeadm join 172.31.20.22:6443 --token bthb4a.kuinl0lc7286kyid \
+        --discovery-token-ca-cert-hash sha256:919a61accb77cb0c41c2e528f6fe25715c09e024fc85294420323cb5dcd96feb

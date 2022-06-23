@@ -21,6 +21,8 @@
 sudo hostname maven
 cd /opt
 sudo yum install wget nano tree unzip git-all -y
+sudo apt install openjdk-11-jre-headless
+                      or
 sudo yum install java-11-openjdk-devel java-1.8.0-openjdk-devel -y
 java -version
 git --version

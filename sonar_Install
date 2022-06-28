@@ -1,7 +1,9 @@
 #!/bin/bash
-# Author: Landmark Technology
+# Author Yhello.Dot Tech
 # CentOs or REHEL 7/8
 #  Install JAVA pre-requisite
+sudo adduser sonar
+sudo su - sonar
 sudo hostname sonar
 cd /opt
 sudo yum -y install unzip wget git
@@ -18,7 +20,6 @@ sudo echo "sonar ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/sonar
 sudo chown -R sonar:sonar /opt/sonarqube/
 sudo chmod -R 775 /opt/sonarqube/
 # start sonarqube as sonar user using relative path
-sudo su - sonar  
 cd /opt/sonarqube/bin/linux-x86-64/ 
 sh sonar.sh start
 # or start sonarqube as sonar user using sonar.sh absolute path

@@ -63,3 +63,22 @@ sudo systemctl start nexus
 sudo systemctl status nexus
 echo "end of nexus installation"
 ```
+access nexus on the browser
+34.229.62.93:8081
+userName  --- ADMIN
+Password   ADMIN123
+
+<<Troubleshooting
+---------------------
+nexus service is not starting?
+
+a)make sure  to change the ownership and group to /opt/nexus and /opt/sonatype-work directories and permissions (775) for nexus user.
+b)make sure you are trying to start nexus service AS nexus user.
+c)check java is installed or not using java -version command.
+d) check the nexus.log file which is availabe in  /opt/sonatype-work/nexus3/log  directory.
+
+Unable to access nexus URL?
+-------------------------------------
+a)make sure port 8081 is opened in security groups in AWS ec2 instance.
+
+Troubleshooting
